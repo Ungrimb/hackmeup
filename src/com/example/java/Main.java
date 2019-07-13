@@ -19,7 +19,13 @@ public class Main {
         char result []= separator.toCharArray();
 
         resultSplit2 = MySplit2(sCadena, result);
-        System.out.println(Arrays.toString(resultSplit2));
+        for(int i=0;i<resultSplit2.length;i++)
+        {
+            if (resultSplit2[i]!=null) {
+                System.out.println(resultSplit2[i]);
+            }
+        }
+//        System.out.println(Arrays.toString(resultSplit2));
 
         resultSplit = MySplit(sCadena, result);
         System.out.println(resultSplit);
